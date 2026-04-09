@@ -1,20 +1,31 @@
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
 
-{% block page_title %}Cadastrar Tarefa{% endblock page_title %}
+{% block page_title %}
+    {% if todo.pk %}
+        Atualizar Tarefa
+    {% else %}
+        Cadastrar Tarefa
+    {% endif %}
+{% endblock page_title %}
 
 {% block content %}
     <div class="form-card">
-        <div class="text-center">
-            <h1>Nova Tarefa</h1>
-        </div>
-        
-        <form method="POST">
+        {% if todo.pk %}
+            <div class="text-center">
+                <h1>Atualizar Tarefa</h1>
+            </div>    
+        {% else %}
+            <div class="text-center">
+                <h1>Nova Tarefa</h1>
+            </div>
+        {% endif %}
+         <form method="POST">
             {% csrf_token %} 
 
             {{ form|crispy }} 
 
-            <button type="submit" class="btn btn-primary shadow-sm">Cadastrar Tarefa</button>  
+            <button type="submit" class="btn btn-primary shadow-sm">Salvar</button>  
             
             <a href="{% url 'todo_list' %}" class="btn-link-custom">← Voltar para a lista</a>
         </form>

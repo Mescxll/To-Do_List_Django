@@ -6,6 +6,7 @@
     --beige: #F7F4D5;
     --rosy-brown: #D3968C;
     --midnight-green: #105666;
+    --header-color: #156747;
 }
 
 body {
@@ -42,11 +43,11 @@ h1 {
     transition: all 0.3s ease;
 }
 
-.btn-primary:hover {
+.btn-second {
     background-color: var(--moss-green);
     border-color: var(--moss-green);
-    color: var(--dark-green);
-    transform: translateY(-1px);
+    color: var(--beige);
+    transition: all 0.3s ease;
 }
 
 .btn-danger {
@@ -56,9 +57,12 @@ h1 {
     transition: all 0.3s ease;
 }
 
+.btn-second:hover,
+.btn-primary:hover,
 .btn-danger:hover {
-    background-color: #b87c73;
-    border-color: #b87c73;
+    background-color: var(--dark-green);
+    border-color: var(--dark-green);
+    color: var(--beige);
     transform: translateY(-1px);
 }
 
