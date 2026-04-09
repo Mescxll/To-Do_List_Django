@@ -1,8 +1,9 @@
 from django.contrib import admin
 from django.urls import path
-from todos.views import TodoListView
+from todos.views import TodoListView, TodoCreateView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", TodoListView.as_view()),
+    path("", TodoListView.as_view(), name="todo_list"),
+    path("cadastrar", TodoCreateView.as_view(), name="todo_create"),
 ]

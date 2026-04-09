@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block page_title %}Cadastrar Tarefa{% endblock page_title %}
+
+{% block content %}
+    <div class="form-card">
+        <div class="text-center">
+            <h1>Nova Tarefa</h1>
+        </div>
+        
+        <form method="POST">
+            {% csrf_token %} 
+
+            {{ form|crispy }} 
+
+            <button type="submit" class="btn btn-primary shadow-sm">Cadastrar Tarefa</button>  
+            
+            <a href="{% url 'todo_list' %}" class="btn-link-custom">← Voltar para a lista</a>
+        </form>
+    </div>
+{% endblock content %}
