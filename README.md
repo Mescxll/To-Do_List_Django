@@ -37,7 +37,24 @@ Acesse no navegador: http://127.0.0.1:8000/
 
 ### 📑 Funcionalidades
 
-- Criar tarefas  
-- Editar tarefas  
-- Excluir tarefas  
-- Marcar tarefas como concluídas  
+- Listar tarefas
+
+  <img width="450" alt="image" src="https://github.com/user-attachments/assets/dcbcf292-2744-4d9c-9944-56b2949acce7" />
+  <img width="450" alt="image" src="https://github.com/user-attachments/assets/952bcd0d-875d-41a7-867b-129e3411061f" />
+
+- Cadastrar tarefas
+  
+  <img width="450" alt="image" src="https://github.com/user-attachments/assets/9b6bc692-b3dd-4d0a-8472-54c3ef9091c2" />
+
+- Atualizar tarefas
+  
+  <img width="450" alt="image" src="https://github.com/user-attachments/assets/cb113494-868d-4830-b74b-d1a58de649b6" />
+
+- Excluir tarefas
+  
+  <img width="450" alt="image" src="https://github.com/user-attachments/assets/29c027cb-a1f1-4a04-951d-a4abe3f11284" />
+
+- Marcar tarefas como concluídas
+  
+  <img width="450" alt="image" src="https://github.com/user-attachments/assets/1bb46320-b720-48cd-b793-5676d56fe0ef" />
+  
