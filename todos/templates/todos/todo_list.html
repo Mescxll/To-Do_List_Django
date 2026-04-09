@@ -37,8 +37,10 @@
                             </td>
                             <td class="text-center">
                                 <div class="d-flex gap-2 justify-content-center">
-                                    <a href={% url "todo_complete" pk=todo.pk %} class="btn btn-primary btn-sm">Concluir</a>
-                                    <a href={% url "todo_update" pk=todo.pk %} class="btn btn-second btn-sm">Atualizar</a>
+                                    {% if not todo.finished_at %}
+                                        <a href={% url "todo_complete" pk=todo.pk %} class="btn btn-primary btn-sm">Concluir</a>
+                                        <a href={% url "todo_update" pk=todo.pk %} class="btn btn-second btn-sm">Atualizar</a>
+                                    {% endif %}
                                     <a href={% url "todo_delete" pk=todo.pk %} class="btn btn-danger btn-sm">Excluir</a>
                                 </div>
                             </td>
